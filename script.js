@@ -750,10 +750,9 @@ loader.load("/assets/tree.glb", (glb) => {
 }, (xhr) => { }, (error) => { }
 )
 
-
 loader.load("/assets/plant.glb", (glb) => {
   var model = glb.scene
-  model.position.set(1, 1, 1)
+  model.position.set(-16.3, 0, -0.2)
   model.scale.set(1.5, 1.5, 1.5)
   model.traverse(function(e) {
     if (e.isMesh) {
@@ -765,6 +764,19 @@ loader.load("/assets/plant.glb", (glb) => {
 }, (xhr) => { }, (error) => { }
 )
 
+loader.load("/assets/plant.glb", (glb) => {
+  var model = glb.scene
+  model.position.set(-11.2, 0, -0.2)
+  model.scale.set(1.5, 1.5, 1.5)
+  model.traverse(function(e) {
+    if (e.isMesh) {
+      e.castShadow = true;
+      e.receiveShadow = true
+    }
+  })
+  scene.add(model)
+}, (xhr) => { }, (error) => { }
+)
 
 
 // banner ads...
