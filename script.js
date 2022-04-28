@@ -508,7 +508,7 @@ product.add(prod)
 
 var dom = document.createElement('div')
 dom.id = "product"
-dom.innerHTML = "<img src='https://ipfs.io/ipfs/QmWCK9EhMahzXSmFZfh8PBco1EZcqEiNp3UB1VH3ictryP'><div class='text'><p>"+products[e].name+"</p><span>$ "+products[e].cost+"</span></div>"
+dom.innerHTML = "<img src='https://www.ebay.com/itm/115351363169'><div class='text'><p>"+products[e].name+"</p><span>$ "+products[e].cost+"</span></div>"
 dom.addEventListener('click', () => {
   alert(1)
 })
