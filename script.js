@@ -249,7 +249,7 @@ scene.add(fwallB)
 function Door(p, l) {
 var doorGeo = new THREE.BoxGeometry(l.x,l.y,l.z)
 var doorMat = new THREE.MeshPhongMaterial({
-  color: "black",
+  color: "Blue",
   side: THREE.DoubleSide,
   transparent: true,
   opacity: 0.6
@@ -293,7 +293,7 @@ var rack = new THREE.Group()
 
 var rack0Geo = new THREE.BoxGeometry(0.1,3.05,1)
 var rack0Mat = new THREE.MeshPhongMaterial({
-  color: 0x501A8A,
+  color: 'Blue',
   side: THREE.DoubleSide,
 })
 var rack01 = new THREE.Mesh(rack0Geo, rack0Mat)
