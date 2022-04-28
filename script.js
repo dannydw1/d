@@ -624,7 +624,7 @@ loader.load("/assets/tree.glb", (glb) => {
 
 loader.load("/assets/tree.glb", (glb) => {
   var model = glb.scene
-  model.position.set(-5.3, 0, 7)
+  model.position.set(-5.3, 0, 9)
   model.scale.set(3, 3, 3)
   model.traverse(function(e) {
     if (e.isMesh) {
@@ -637,7 +637,7 @@ loader.load("/assets/tree.glb", (glb) => {
 )
 loader.load("/assets/tree.glb", (glb) => {
   var model = glb.scene
-  model.position.set(-5.3, 0, 10)
+  model.position.set(-5.3, 0, 14)
   model.scale.set(3, 3, 3)
   model.traverse(function(e) {
     if (e.isMesh) {
@@ -650,7 +650,7 @@ loader.load("/assets/tree.glb", (glb) => {
 )
 loader.load("/assets/tree.glb", (glb) => {
   var model = glb.scene
-  model.position.set(-5.3, 0, 13)
+  model.position.set(-5.3, 0, 19)
   model.scale.set(3, 3, 3)
   model.traverse(function(e) {
     if (e.isMesh) {
@@ -663,7 +663,7 @@ loader.load("/assets/tree.glb", (glb) => {
 )
 loader.load("/assets/tree.glb", (glb) => {
   var model = glb.scene
-  model.position.set(-16.3, 0, -3)
+  model.position.set(-16.3, 0, 24)
   model.scale.set(1.5, 1.5, 1.5)
   model.traverse(function(e) {
     if (e.isMesh) {
