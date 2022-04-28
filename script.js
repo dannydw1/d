@@ -653,6 +653,20 @@ loader.load("/assets/cart.glb", (glb) => {
 }, (xhr) => { }, (error) => { }
 )
 
+loader.load("/assets/Car.glb", (glb) => {
+  var model = glb.scene
+  model.position.set(-15.3, 0, -0.1)
+  model.scale.set(0.015, 0.015, 0.015)
+  model.traverse(function(e) {
+    if (e.isMesh) {
+      e.castShadow = true;
+      e.receiveShadow = true
+    }
+  })
+  model.rotation.y = (Math.PI/7)+Math.PI
+  scene.add(model)
+}, (xhr) => { }, (error) => { }
+)
 // decors...
 
 loader.load("/assets/plant.glb", (glb) => {
