@@ -539,7 +539,7 @@ var product = new THREE.Group()
 
 var prodGeo = new THREE.BoxGeometry(0.5, 0.5, 1)
 var prodMat = new THREE.MeshPhongMaterial({
-  color: "orange",
+  color: "white",
   side: THREE.DoubleSide,
   map: new THREE.TextureLoader().load('/assets/box.png')
 })
