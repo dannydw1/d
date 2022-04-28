@@ -622,10 +622,48 @@ loader.load("/assets/tree.glb", (glb) => {
 }, (xhr) => { }, (error) => { }
 )
 
-
-loader.load("/assets/plant.glb", (glb) => {
+loader.load("/assets/tree.glb", (glb) => {
   var model = glb.scene
-  model.position.set(-16.3, 0, -0.2)
+  model.position.set(-5.3, 0, 4)
+  model.scale.set(3, 3, 3)
+  model.traverse(function(e) {
+    if (e.isMesh) {
+      e.castShadow = true;
+      e.receiveShadow = true
+    }
+  })
+  scene.add(model)
+}, (xhr) => { }, (error) => { }
+)
+loader.load("/assets/tree.glb", (glb) => {
+  var model = glb.scene
+  model.position.set(-5.3, 0, 1)
+  model.scale.set(3, 3, 3)
+  model.traverse(function(e) {
+    if (e.isMesh) {
+      e.castShadow = true;
+      e.receiveShadow = true
+    }
+  })
+  scene.add(model)
+}, (xhr) => { }, (error) => { }
+)
+loader.load("/assets/tree.glb", (glb) => {
+  var model = glb.scene
+  model.position.set(-5.3, 0, -1)
+  model.scale.set(3, 3, 3)
+  model.traverse(function(e) {
+    if (e.isMesh) {
+      e.castShadow = true;
+      e.receiveShadow = true
+    }
+  })
+  scene.add(model)
+}, (xhr) => { }, (error) => { }
+)
+loader.load("/assets/tree.glb", (glb) => {
+  var model = glb.scene
+  model.position.set(-16.3, 0, -3)
   model.scale.set(1.5, 1.5, 1.5)
   model.traverse(function(e) {
     if (e.isMesh) {
