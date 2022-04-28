@@ -212,7 +212,7 @@ scene.add(path0)
 
 var wallGeo = new THREE.BoxGeometry(25.1,5,0.1)
 var wallMat = new THREE.MeshPhongMaterial({
-  color: 0xB09D1B,
+  color: 'White',
   side: THREE.DoubleSide,
 })
 var wallA = new THREE.Mesh(wallGeo, wallMat)
