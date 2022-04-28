@@ -608,6 +608,21 @@ loader.load("/assets/cart.glb", (glb) => {
 
 // decors...
 
+loader.load("/assets/tree.glb", (glb) => {
+  var model = glb.scene
+  model.position.set(-10.3, 0, -0.2)
+  model.scale.set(1.5, 1.5, 1.5)
+  model.traverse(function(e) {
+    if (e.isMesh) {
+      e.castShadow = true;
+      e.receiveShadow = true
+    }
+  })
+  scene.add(model)
+}, (xhr) => { }, (error) => { }
+)
+
+
 loader.load("/assets/plant.glb", (glb) => {
   var model = glb.scene
   model.position.set(-16.3, 0, -0.2)
