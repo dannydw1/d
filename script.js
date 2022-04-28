@@ -355,147 +355,99 @@ const products = [
   {
     id: "1",
     index: "1",
-    name: "Lorem Ipsum dolar sit",
+    name: "GC Natural Rejeune kidney health energetic activity",
     cost: "99"
   },
   {
     id: "2",
     index: "1",
-    name: "Lorem Ipsum dolar sit",
+    name: "GC Natural Rejeune kidney health energetic activity ",
     cost: "99"
   },
   {
     id: "3",
     index: "1",
-    name: "Lorem Ipsum dolar sit",
+    name: "GC Natural Rejeune kidney health energetic activity ",
     cost: "99"
   },
  {
     id: "4",
     index: "2",
-    name: "Lorem Ipsum dolar sit",
+    name: "GC Natural Rejeune kidney health energetic activity ",
     cost: "999"
   },
   {
     id: "5",
     index: "2",
-    name: "Lorem Ipsum dolar sit",
+    name: "GC Natural Rejeune kidney health energetic activity ",
     cost: "999"
   },
   {
     id: "6",
     index: "2",
-    name: "Lorem Ipsum dolar sit",
+    name: "GC Natural Rejeune kidney health energetic activity ",
     cost: "999"
   },
   {
     id: "7",
     index: "3",
-    name: "Lorem Ipsum dolar sit",
+    name: "GC Natural Rejeune kidney health energetic activity ",
     cost: "99"
   },
   {
     id: "8",
     index: "3",
-    name: "Lorem Ipsum dolar sit",
+    name: "GC Natural Rejeune kidney health energetic activity ",
     cost: "99"
   },
   {
     id: "9",
     index: "3",
-    name: "Lorem Ipsum dolar sit",
+    name: "GC Natural Rejeune kidney health energetic activity ",
     cost: "99"
   },
  {
     id: "10",
     index: "4",
-    name: "Lorem Ipsum dolar sit",
+    name: "GC Natural Rejeune kidney health energetic activity ",
     cost: "999"
   },
   {
     id: "11",
     index: "4",
-    name: "Lorem Ipsum dolar sit",
+    name: "GC Natural Rejeune kidney health energetic activity ",
     cost: "999"
   },
   {
     id: "12",
     index: "4",
-    name: "Lorem Ipsum dolar sit",
+    name: "GC Natural Rejeune kidney health energetic activity ",
     cost: "999"
   },
   {
     id: "13",
     index: "5",
-    name: "Lorem Ipsum dolar sit",
+    name: "GC Natural Rejeune kidney health energetic activity ",
     cost: "99"
   },
   {
     id: "14",
     index: "5",
-    name: "Lorem Ipsum dolar sit",
+    name: "GC Natural Rejeune kidney health energetic activity ",
     cost: "99"
   },
   {
     id: "15",
     index: "5",
-    name: "Lorem Ipsum dolar sit",
+    name: "GC Natural Rejeune kidney health energetic activity ",
     cost: "99"
   },
   {
     id: "16",
     index: "6",
-    name: "Lorem Ipsum dolar sit",
+    name: "GC Natural Rejeune kidney health energetic activity ",
     cost: "999"
-  },
-  {
-    id: "17",
-    index: "6",
-    name: "Lorem Ipsum dolar sit",
-    cost: "999"
-  },
-  {
-    id: "18",
-    index: "6",
-    name: "Lorem Ipsum dolar sit",
-    cost: "999"
-  },
-  {
-    id: "19",
-    index: "7",
-    name: "Lorem Ipsum dolar sit",
-    cost: "99"
-  },
-  {
-    id: "20",
-    index: "7",
-    name: "Lorem Ipsum dolar sit",
-    cost: "99"
-  },
-  {
-    id: "21",
-    index: "7",
-    name: "Lorem Ipsum dolar sit",
-    cost: "99"
-  },
-  {
-    id: "22",
-    index: "8",
-    name: "Lorem Ipsum dolar sit",
-    cost: "999"
-  },
-  {
-    id: "23",
-    index: "8",
-    name: "Lorem Ipsum dolar sit",
-    cost: "999"
-  },
-  {
-    id: "24",
-    index: "8",
-    name: "Lorem Ipsum dolar sit",
-    cost: "999"
-  },
+  }
 ]
 
 function Products(a, i) {
@@ -653,20 +605,7 @@ loader.load("/assets/cart.glb", (glb) => {
 }, (xhr) => { }, (error) => { }
 )
 
-loader.load("/assets/Car.glb", (glb) => {
-  var model = glb.scene
-  model.position.set(-16.3, 0, -0.2)
-  model.scale.set(1.5, 1.5, 1.5)
-  model.traverse(function(e) {
-    if (e.isMesh) {
-      e.castShadow = true;
-      e.receiveShadow = true
-    }
-  })
-  model.rotation.y = (Math.PI/7)+Math.PI
-  scene.add(model)
-}, (xhr) => { }, (error) => { }
-)
+
 // decors...
 
 loader.load("/assets/plant.glb", (glb) => {
