@@ -664,7 +664,22 @@ loader.load("/assets/tree.glb", (glb) => {
 
 loader.load("/assets/tree.glb", (glb) => {
   var model = glb.scene
-  model.position.set(1.3, 0, 24)
+  model.position.set(-5.3, 0, 24)
+  model.scale.set(1.5, 1.5, 1.5)
+  model.traverse(function(e) {
+    if (e.isMesh) {
+      e.castShadow = true;
+      e.receiveShadow = true
+    }
+  })
+  scene.add(model)
+}, (xhr) => { }, (error) => { }
+)
+
+
+loader.load("/assets/tree.glb", (glb) => {
+  var model = glb.scene
+  model.position.set(5.3, 0, 4)
   model.scale.set(1.5, 1.5, 1.5)
   model.traverse(function(e) {
     if (e.isMesh) {
