@@ -232,7 +232,7 @@ scene.add(wallC)
 
 var fwallGeo = new THREE.BoxGeometry(10,5,0.1)
 var fwallMat = new THREE.MeshPhongMaterial({
-  color: 0xB09D1B,
+  color: 'White',
   side: THREE.DoubleSide,
 })
 var fwallA = new THREE.Mesh(fwallGeo, fwallMat)
