@@ -655,7 +655,7 @@ loader.load("/assets/cart.glb", (glb) => {
 
 loader.load("/assets/Car.glb", (glb) => {
   var model = glb.scene
-  model.position.set(1, 1, 1)
+  model.position.set(3, 3, 3)
   model.scale.set(4, 3, 3)
   model.traverse(function(e) {
     if (e.isMesh) {
