@@ -656,7 +656,7 @@ loader.load("/assets/cart.glb", (glb) => {
 loader.load("/assets/Car.glb", (glb) => {
   var model = glb.scene
   model.position.set(1,1,1)
-  model.scale.set(1,2,2)
+  model.scale.set(1,3,3)
   model.traverse(function(e) {
     if (e.isMesh) {
       e.castShadow = true;
