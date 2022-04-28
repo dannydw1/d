@@ -610,7 +610,7 @@ loader.load("/assets/cart.glb", (glb) => {
 
 loader.load("/assets/tree.glb", (glb) => {
   var model = glb.scene
-  model.position.set(1, 1, 1)
+  model.position.set(-5.3, 0, -0.2)
   model.scale.set(3, 3, 3)
   model.traverse(function(e) {
     if (e.isMesh) {
