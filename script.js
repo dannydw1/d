@@ -691,6 +691,66 @@ loader.load("/assets/tree.glb", (glb) => {
 }, (xhr) => { }, (error) => { }
 )
 
+
+loader.load("/assets/tree.glb", (glb) => {
+  var model = glb.scene
+  model.position.set(-18.3, 0, 9)
+  model.scale.set(3, 3, 3)
+  model.traverse(function(e) {
+    if (e.isMesh) {
+      e.castShadow = true;
+      e.receiveShadow = true
+    }
+  })
+  scene.add(model)
+}, (xhr) => { }, (error) => { }
+)
+
+
+loader.load("/assets/tree.glb", (glb) => {
+  var model = glb.scene
+  model.position.set(-18.3, 0, 14)
+  model.scale.set(3, 3, 3)
+  model.traverse(function(e) {
+    if (e.isMesh) {
+      e.castShadow = true;
+      e.receiveShadow = true
+    }
+  })
+  scene.add(model)
+}, (xhr) => { }, (error) => { }
+)
+
+
+loader.load("/assets/tree.glb", (glb) => {
+  var model = glb.scene
+  model.position.set(-18.3, 0, 19)
+  model.scale.set(3, 3, 3)
+  model.traverse(function(e) {
+    if (e.isMesh) {
+      e.castShadow = true;
+      e.receiveShadow = true
+    }
+  })
+  scene.add(model)
+}, (xhr) => { }, (error) => { }
+)
+
+loader.load("/assets/tree.glb", (glb) => {
+  var model = glb.scene
+  model.position.set(-18.3, 0, 24)
+  model.scale.set(3, 3, 3)
+  model.traverse(function(e) {
+    if (e.isMesh) {
+      e.castShadow = true;
+      e.receiveShadow = true
+    }
+  })
+  scene.add(model)
+}, (xhr) => { }, (error) => { }
+)
+
+
 loader.load("/assets/plant.glb", (glb) => {
   var model = glb.scene
   model.position.set(1, 1, 1)
