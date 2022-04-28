@@ -661,9 +661,10 @@ loader.load("/assets/tree.glb", (glb) => {
   scene.add(model)
 }, (xhr) => { }, (error) => { }
 )
+
 loader.load("/assets/tree.glb", (glb) => {
   var model = glb.scene
-  model.position.set(-16.3, 0, 24)
+  model.position.set(1.3, 0, 24)
   model.scale.set(1.5, 1.5, 1.5)
   model.traverse(function(e) {
     if (e.isMesh) {
