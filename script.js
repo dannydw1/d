@@ -608,7 +608,7 @@ loader.load("/assets/cart.glb", (glb) => {
 
 // decors...
 
-loader.load("/assets/AntiTheftGate.glb", (glb) => {
+loader.load("/assets/plant.glb", (glb) => {
   var model = glb.scene
   model.position.set(-16.3, 0, -0.2)
   model.scale.set(1.5, 1.5, 1.5)
@@ -622,7 +622,7 @@ loader.load("/assets/AntiTheftGate.glb", (glb) => {
 }, (xhr) => { }, (error) => { }
 )
 
-loader.load("/assets/AntiTheftGate.glb", (glb) => {
+loader.load("/assets/plant.glb", (glb) => {
   var model = glb.scene
   model.position.set(1, 1, 1)
   model.scale.set(1.5, 1.5, 1.5)
